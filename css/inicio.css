@@ -1,0 +1,158 @@
+* { margin: 0; padding: 0; }
+
+body {
+    background-color: #191919;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdfdfd;
+}
+
+header img {
+    margin-left: 15px;
+    width: 120px;
+}
+
+/* Icone animado NavBar*/
+.custom-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    right: 15px; /* Ajuste a distância da borda direita */
+    top: 35px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.custom-button span {
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #191919;
+    transition: 0.5s;
+}
+
+#bar_button:focus span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+    background-color: #C1A460;
+}
+
+#bar_button:focus span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+
+#bar_button:focus span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+    background-color: #C1A460;
+}
+/*Final do icone animado*/
+
+.navbar a {
+    display: inline;
+    margin: 10px;
+    color: black;
+    border: none;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: bolder;
+}
+
+.navbar a:hover {
+    color: #C1A460;
+    transition: all .3s;
+    text-decoration: 2px underline;
+}
+
+main .inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background-color: #303030;
+}
+
+aside h1 {
+    color: #C1A460;
+    font-size: 3.125rem;
+    font-weight: 400;
+    margin: 5px;
+    font-family: "Agbalumo";
+    text-decoration: underline;
+}
+
+aside p {
+    color: white;
+    line-height: 20px;
+    max-width: 510px;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 5px;
+}
+
+aside button {
+    height: 50px;
+    margin: 25px 0 0 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #525252;
+    cursor: pointer;
+}
+
+aside button:hover {
+    background-color: #D8BB76;
+    transition: all .3s;
+}
+
+aside a {
+    font-family: "Oswald";
+    font-size: 25px;
+    margin: 15px;
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #303030;
+    transition: all .4s;
+    text-decoration: 2px underline;
+}
+
+article img {
+    padding-left: 20px;
+    width: 620px;
+}
+
+@media screen and (max-width: 815px) {
+    .custom-button {
+        display: flex;
+    }
+
+    aside h1 {
+        font-size: 2rem;
+    }
+
+    article img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .custom-button {
+        display: flex;
+    }
+    .navbar a {
+        display: none;
+    }
+}

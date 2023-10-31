@@ -1,0 +1,60 @@
+#horarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 25px 0;
+    margin: 0 0 35px 0;
+    color: white;
+    background-color: #303030;
+}
+
+#horarios h1 {
+    margin: 15px 0 25px 0;
+    font-size: 45px;
+    font-family: "Agbalumo";
+    font-weight: 400;
+    color: #C1A460;
+    text-decoration: underline;
+}
+
+.dia-das-semanas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 12px #947d48;
+    background-color: #C1A460;
+}
+
+.dia-das-semanas img {
+    width: 180px;
+}
+
+.dias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.seg-sab, .final-semana {
+    margin: 10px;
+}
+
+.seg-sab h2, .final-semana h2 {
+    margin: 15px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Oswald";
+    text-decoration: underline;
+}
+
+.seg-sab span, .final-semana span {
+    font-size: 28px;
+    margin: 20px;
+    font-weight: 600;
+}

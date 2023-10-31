@@ -1,0 +1,100 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 35px 0;
+    color: white;
+}
+
+#menu img {
+    margin: 8px 20px 8px 0;
+    width: 150px;
+    height: 90px;
+}
+
+#menu h1 {
+    margin: 15px 0 25px 0;
+    font-size: 45px;
+    font-family: "Agbalumo";
+    font-weight: 400;
+    color: #C1A460;
+    text-decoration: underline;
+}
+
+#menu h2 {
+    margin: 10px;
+    font-family: "Oswald";
+    text-decoration: underline;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px 10px 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 12px #947d48;
+    background-color: #C1A460;
+}
+
+.cardapio h2 {
+    text-align: center;
+}
+
+.cardapio .pp h2 { position: relative; left: 28px; }
+.cardapio .sobremesas h2 { position: relative; left: 42px; }
+.cardapio .bebidas h2 { position: relative; left: 32px; }
+
+
+.etd-comidas, .pp-comidas, .sobs, .drinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pp { position: relative; right: 24px; }
+.sobremesas { position: relative; right: 46px; }
+.bebidas { position: relative; right: 38px; }
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 10px 0;
+    line-height: 22px;
+}
+
+.descricao p:nth-child(2n+1) {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 815px) {
+    #menu img {
+        margin-left: 15px;
+        width: 75vw;
+        height: 32vh;
+    }
+
+    .etd-comidas, .pp-comidas, .sobs, .drinks:not(.special-drink) { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pp { right: 0; }
+    .sobremesas { right: 0; }
+    .bebidas { right: 0; }
+
+    .cardapio .pp h2 { left: 0; }
+    .cardapio .sobremesas h2 { left: 0; }
+    .cardapio .bebidas h2 { left: 0; }
+
+    .cardapio {
+        width: 80%;
+    }
+
+    .descricao {
+        text-align: center;
+    }
+}
