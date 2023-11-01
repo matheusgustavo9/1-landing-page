@@ -102,29 +102,22 @@ aside p {
 }
 
 aside button {
-    height: 50px;
     margin: 25px 0 0 0;
+    padding: 10px 15px 10px 15px;
     border-radius: 10px;
     border: none;
+    box-shadow: 1px 2px 15px #191919;
     background-color: #525252;
+    font-family: "Oswald";
+    font-size: 25px;
+    color: #fdfdfd;
     cursor: pointer;
 }
 
 aside button:hover {
-    background-color: #D8BB76;
-    transition: all .3s;
-}
-
-aside a {
-    font-family: "Oswald";
-    font-size: 25px;
-    margin: 15px;
-    color: #fdfdfd;
-    text-decoration: none;
-}
-
-aside a:hover {
     color: #303030;
+    box-shadow: 1px 2px 15px #D8BB76;
+    background-color: #D8BB76;
     transition: all .4s;
     text-decoration: 2px underline;
 }
@@ -133,6 +126,35 @@ article img {
     padding-left: 20px;
     width: 620px;
 }
+
+/* Botão voltar ao topo */
+.return {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#return {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 1px 2px 15px #191919;
+    background-color: #fdfdfd;
+}
+
+#return img {
+    margin: 2px 3px 0 4px;
+    width: 35px;
+}
+
+#return:hover {
+    color: #303030;
+    box-shadow: 1px 2px 15px #D8BB76;
+    background-color: #D8BB76;
+    transition: all .4s;
+}
+/* Final do botão voltar ao topo */
 
 @media screen and (max-width: 815px) {
     .custom-button {
@@ -145,6 +167,16 @@ article img {
 
     article img {
         display: none;
+    }
+    .return {
+        display: none;
+    }
+    aside button:hover {
+        color: #fdfdfd;
+        box-shadow: 1px 2px 15px #191919;
+        background-color: #525252;
+        transition: none;
+        text-decoration: none;
     }
 }
 
