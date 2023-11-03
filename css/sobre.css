@@ -1,0 +1,25 @@
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 25px 0;
+    color: white;
+    background-color: #303030;
+}
+
+#sobre h1 {
+    margin: 15px 0 25px 0;
+    font-size: 45px;
+    font-family: "Agbalumo";
+    font-weight: 400;
+    color: #fdfdfd;
+    text-decoration: underline;
+}
+
+.dados-sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
