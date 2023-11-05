@@ -245,7 +245,13 @@
                     </form>
                 </div>
             </div>
-            <button>Reservar</button>
+
+            <button id="reservarBtn">Reservar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <p id="mensagemReserva" class="mensagem"></p>
+                </div>
+            </div>
         </section>
 
         <section id="sobre">
@@ -277,33 +283,25 @@
             <h1>Contato</h1>
             <div class="contatos">
                 <div class="telefone">
-                    <div class="meios-de-contato">
                         <img src="https://img.freepik.com/icones-gratis/viber_318-162962.jpg?w=2000" alt="">
-                    </div>
                     <h2>Telefone</h2>
                     <p>(82) 4002-8922</p>
                 </div>
 
                 <div class="instagram">
-                    <div class="meios-de-contato">
                         <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-9.png" alt="">
-                    </div>
                     <h2>Instagram</h2>
                     <p>@brazilian_gourmet</p>
                 </div>
 
                 <div class="facebook">
-                    <div class="meios-de-contato">
                         <img src="https://cdn-icons-png.flaticon.com/256/20/20673.png" alt="">
-                    </div>
                     <h2>Facebook</h2>
                     <p>Brazilian Gourmet</p>
                 </div>
 
                 <div class="endereco">
-                    <div class="meios-de-contato">
                         <img src="https://img.freepik.com/icones-gratis/placeholder_318-565457.jpg" alt="">
-                    </div>
                     <h2>Endereço</h2>
                     <p>Av. Comendador Gustavo Paiva, 2990 <br> Maceió - AL, 57032-901</p>
                 </div>
@@ -318,5 +316,6 @@
         <button id="return"><img src="images/arrow-up.png" alt="Voltar ao Topo"></button>
         <script src="return.js"></script>
     </div>
+    <script src="mesa.js"></script>
 </body>
 </html>

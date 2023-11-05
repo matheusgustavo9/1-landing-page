@@ -86,6 +86,32 @@ label {
     text-decoration: 2px underline;
 }
 
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #525252;
+    box-shadow: 2px 2px 12px #525252;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.mensagem {
+    color: #fdfdfd;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: "Oswald";
+}
+
 @media screen and (max-width: 815px) {
     .reser-mesa {
         display: flex;
@@ -97,5 +123,8 @@ label {
     }
     .dados-pessoais {
         width: 100%;
+    }
+    .modal-content {
+        width: 75vw;
     }
 }
