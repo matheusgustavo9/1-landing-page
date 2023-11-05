@@ -27,9 +27,19 @@
 }
 
 .imgs {
+    display: flex;
+    flex-wrap: wrap;
     width: 48%;
-    height: 85vh;
     margin: 15px;
+}
+
+.imgs img {
+    width: 305px;
+    height: 260px;
+    margin: 5px;
+    border: 2px solid #C1A460;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px #947d4898;
 }
 
 .rest-sobre {
@@ -37,4 +47,25 @@
     font-size: 18px;
     line-height: 22px;
     margin: 15px;
+}
+
+@media screen and (max-width: 815px) {
+    .dados-sobre {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .imgs {
+        width: 95%;
+    }
+
+    .imgs img {
+        width: 215px;
+        height: 170px;
+    }
+
+    .rest-sobre {
+        width: 95%;
+        flex-wrap: wrap;
+    }
 }

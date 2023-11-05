@@ -1,0 +1,79 @@
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 25px 0;
+    color: white;
+}
+
+#contato h1 {
+    margin: 15px 0 25px 0;
+    font-size: 45px;
+    font-family: "Agbalumo";
+    font-weight: 400;
+    color: #fdfdfd;
+    text-decoration: underline;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 90%;
+    padding: 50px;
+}
+
+.contatos img {
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.contatos img:hover {
+    transform: scale(1.2);
+}
+
+.contatos h2 {
+    text-decoration: underline;
+    font-family: "Oswald";
+    font-weight: 500;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.contatos p { cursor: pointer; }
+
+.telefone, .instagram, .facebook, .endereco {
+    border-radius: 15px;
+    box-shadow: 2px 2px 12px #947d48;
+    background-color: #C1A460;
+    padding: 20px;
+}
+
+@media screen and (max-width: 815px) {
+    .contatos {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .contatos img {
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .contatos h2 {
+        font-size: 20px;
+    }
+
+    .contatos p {
+        font-size: 12px;
+    }
+
+    .telefone, .instagram, .facebook, .endereco {
+        margin: 10px;
+        padding: 10px;
+    }
+}
